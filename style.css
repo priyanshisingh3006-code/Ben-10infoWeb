@@ -129,4 +129,95 @@ body{
     letter-spacing: 1px;
 }
 
+.section {
+    padding: 80px 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--green);
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: var(--card);
+    padding: 25px;
+    border: 1px solid #111;
+}
+
+.card h3 {
+    color: var(--green);
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: var(--text-dim);
+    font-size: 14px;
+}
+
+.pageHero {
+    height: 300px;
+    display: flex;
+    align-tems: center;
+    justify-content: center;
+    text-align: center;
+    background: #000;
+}
+
+.pageHero h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--green);
+}
+
+.content {
+    padding: 80px 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.content p {
+    margin-bottom: 20px;
+    color:var(--text-dim);
+}
+
+.footer {
+    text-align: center;
+    padding: 40px;
+    background: #000;
+    color: var(--text-dim);
+    font-size: 13px;
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-temple-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .topNav ul {
+        display; none;
+    }
+
+    #hamburgerBtn {
+        display: flex;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 60px 20px;
+    }
+}
+
 
