@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-dark: #050805;
+    --bg-mid: #0b120b;
+    --green: #39ff14;
+    --green-dim: #1fa30f;
+    --text: #d7ffd7;
+    --text-dim: #7aa87a;
+    --card: #0f1a0f;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-dark);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.topNav {
+    height: 70px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #111;
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    color: var(--green);
+    text-decoration: none;
+}
+
+.logo span{
+    color: #fff;
+}
+
+.topNav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.topNav ul li a {
+    text-decoration: none;
+    color: var(--text-dim);
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.topNav ul li a:hover,
+.topNav ul li a.active {
+    color: var(--green);
+}
+
+#hamburgerBtn {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+}
+
+#hamburgerBtn span {
+    width: 25px;
+    height: 2px;
+    background: #fff;
+}
+.mobileNav {
+    display: none;
+    flex-direction: column;
+    background: #000;
+    padding: 20px;
+}
+
+.mobileNav.open {
+    display: flex;
+}
+
+.mobileNav a {
+    color: var(--text-dim);
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #111;
+}
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    background: radial-gradient(circle at center, #0a1a0a, #000);
+}
+
+.hero h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    color: var(--green);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: var(--text-dim);
+    max-width: 600px;
+    margin: 0 auto 30 px;
+}
+
+.btn {
+    padding: 12px 30px;
+    background: var(--green);
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
