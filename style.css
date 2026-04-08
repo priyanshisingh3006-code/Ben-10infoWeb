@@ -166,7 +166,7 @@ body{
 .pageHero {
     height: 300px;
     display: flex;
-    align-tems: center;
+    align-items: center;
     justify-content: center;
     text-align: center;
     background: #000;
@@ -198,13 +198,13 @@ body{
 
 @media (max-width: 900px) {
     .grid {
-        grid-temple-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (max-width: 600px) {
     .topNav ul {
-        display; none;
+        display: none;
     }
 
     #hamburgerBtn {
