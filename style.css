@@ -23,6 +23,10 @@ body{
     line-height: 1.6;
 }
 
+.textBlock {
+    margin-bottom: 25px;
+}
+
 .topNav {
     height: 70px;
     background: #000;
